@@ -1,0 +1,29 @@
+name: Refresh Sample SVG
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'docs/**'
+
+jobs:
+  execution:
+    name: Deploying SVG to repository
+    runs-on: ubuntu-18.04
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    
+    - name: Fetch API Data
+      uses: JamesIves/fetch-api-data-action@v2
+      with:
+        endpoint: https://minicraft-plus-poeditor-stats-bencheung0422.vercel.app/api?api_token=${{ secrets.POEDITOR_API_TOKEN }}&id=${{ secrets.POEDITOR_PROJECT_ID }}
+        retry: true
+    - name: Build and Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ github.token }}
+        BRANCH: main # Pushes the updates to the main branch.
+        FOLDER: fetch-api-data-action # The location of the data.json file saved by the Fetch API Data action.
+        TARGET_FOLDER: data # Saves the data into the 'data' directory on the main branch.
