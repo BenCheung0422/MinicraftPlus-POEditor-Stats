@@ -1,13 +1,11 @@
 // @ts-check
 
 import { Card } from "./Card.js";
-import { getStyles } from "./getStyles.js";
+import { calculateCircleProgress, getStyles } from "./getStyles.js";
 import { flexLayout, getCardColors, measureText } from "./utils.js";
 
-const CARD_MIN_WIDTH = 287;
-const CARD_DEFAULT_WIDTH = 287;
-const RANK_CARD_MIN_WIDTH = 420;
-const RANK_CARD_DEFAULT_WIDTH = 450;
+const CARD_MIN_WIDTH = 480;
+const CARD_DEFAULT_WIDTH = 550;
 
 export class Project {
     /** @readonly @type {number} Integer */
@@ -133,7 +131,7 @@ export const renderStatsCard = (project, languages) => {
 
     // Calculate the card height depending on how many items there are
     // but if rank circle is visible clamp the minimum height to `150`
-    let height = Math.max(45 + (statItems.length + 1) * LINE_HEIGHT, 150);
+    let height = Math.max(45 + (statItems.length + 1) * LINE_HEIGHT + 60, 150);
 
     const progress = Math.round((languages.reduce((a, b) => a + b.translations, 0) / languages.length / project.terms * 100 + Number.EPSILON) * 100) / 100;
     const cssStyles = getStyles({
@@ -143,13 +141,9 @@ export const renderStatsCard = (project, languages) => {
         progress
     });
 
-    const calculateTextWidth = () => {
-        return measureText(project.name);
-    };
-
-    let width = RANK_CARD_DEFAULT_WIDTH;
-    if (width < RANK_CARD_MIN_WIDTH) {
-        width = RANK_CARD_MIN_WIDTH;
+    let width = CARD_DEFAULT_WIDTH;
+    if (width < CARD_MIN_WIDTH) {
+        width = CARD_MIN_WIDTH;
     }
 
     const card = new Card({
@@ -179,35 +173,34 @@ export const renderStatsCard = (project, languages) => {
      * @returns {number} - Rank circle translation value.
      */
     const calculateRankXTranslation = () => {
-        const minXTranslation = RANK_CARD_MIN_WIDTH - 70;
-        if (width > RANK_CARD_DEFAULT_WIDTH) {
-            const xMaxExpansion = minXTranslation + (450 - RANK_CARD_MIN_WIDTH) / 2;
-            return xMaxExpansion + width - RANK_CARD_DEFAULT_WIDTH;
+        const minXTranslation = CARD_MIN_WIDTH - 70;
+        if (width > CARD_DEFAULT_WIDTH) {
+            const xMaxExpansion = minXTranslation + (450 - CARD_MIN_WIDTH) / 2;
+            return xMaxExpansion + width - CARD_DEFAULT_WIDTH;
         } else {
-            return minXTranslation + (width - RANK_CARD_MIN_WIDTH) / 2;
+            return minXTranslation + (width - CARD_MIN_WIDTH) / 2;
         }
     };
 
     // Conditionally rendered elements
     const rankCircle =
-    `<g data-testid="rank-circle"
-        transform="translate(${calculateRankXTranslation()}, ${
-        height / 2 - 50
-    })">
-        <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
-        <circle class="rank-circle" cx="-10" cy="8" r="40" />
-        <g class="rank-text">
-        <text
-            x="-5"
-            y="3"
-            alignment-baseline="central"
-            dominant-baseline="central"
-            text-anchor="middle"
-        >
-            ${progress}%
-        </text>
-        </g>
-    </g>`;
+        `<g data-testid="rank-circle"
+            transform="translate(${calculateRankXTranslation()}, ${
+            ((statItems.length-1) * LINE_HEIGHT + 16.8) / 2
+        })">
+            <circle class="rank-circle-rim" r="40" />
+            <circle class="rank-circle" r="40" />
+            <g class="rank-text">
+            <text
+                x="5"
+                y="-3"
+                dominant-baseline="middle"
+                text-anchor="middle"
+            >
+                ${progress}%
+            </text>
+            </g>
+        </g>`;
 
     // Accessibility Labels
     const labels = Object.keys(STATS)
@@ -219,6 +212,39 @@ export const renderStatsCard = (project, languages) => {
         desc: labels,
     });
 
+    card.setCSS(card.css + "\n" + languages.map(lang => `
+        @keyframes langAnimation_${lang.code} {
+            from {
+                stroke-dashoffset: ${calculateCircleProgress(0)};
+            }
+            to {
+                stroke-dashoffset: ${calculateCircleProgress(lang.percentage)};
+            }
+        }
+    `).join("\n"));
+
+    const langCircles =
+        `<g data-testid="lang-circles"
+            transform="translate(45, 115)">
+            ${languages.map((lang, index) => `
+                <g transform="translate(${index * (width-70) / languages.length})">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_${lang.code} 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">${lang.name}</tspan>
+                            <tspan x="5" dy="1em">${lang.percentage}%</tspan>
+                        </text>
+                    </g>
+                </g>
+            `).join("\n")}
+        </g>`;
+
     return card.render(`
         ${rankCircle}
         <svg x="0" y="0">
@@ -228,6 +254,7 @@ export const renderStatsCard = (project, languages) => {
                 direction: "column",
             }).join("")}
         </svg>
+        ${langCircles}
     `);
 }
 

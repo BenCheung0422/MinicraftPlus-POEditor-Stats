@@ -5,7 +5,7 @@
  * @param {number} value The rank value to calculate progress for.
  * @returns {number} Progress value.
  */
-const calculateCircleProgress = (value) => {
+export const calculateCircleProgress = (value) => {
     const radius = 40;
     const c = Math.PI * (radius * 2);
   
@@ -94,6 +94,10 @@ const getStyles = ({
             font: 800 20px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${textColor};
             animation: scaleInAnimation 0.3s ease-in-out forwards;
         }
+        .lang-text {
+            font: 500 8px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${textColor};
+            animation: scaleInAnimation 0.3s ease-in-out forwards;
+        }
         
         .not_bold { font-weight: 400 }
         .bold { font-weight: 700 }
@@ -111,9 +115,23 @@ const getStyles = ({
             stroke-width: 6;
             stroke-linecap: round;
             opacity: 0.8;
-            transform-origin: -10px 8px;
             transform: rotate(-90deg);
             animation: rankAnimation 1s forwards ease-in-out;
+        }
+        .lang-circle-rim {
+            stroke: ${ringColor};
+            fill: none;
+            stroke-width: 3;
+            opacity: 0.2;
+        }
+        .lang-circle {
+            stroke: ${ringColor};
+            stroke-dasharray: 250;
+            fill: none;
+            stroke-width: 3;
+            stroke-linecap: round;
+            opacity: 0.8;
+            transform: rotate(-90deg);
         }
         ${process.env.NODE_ENV === "test" ? "" : getProgressAnimation({ progress })}
     `;
