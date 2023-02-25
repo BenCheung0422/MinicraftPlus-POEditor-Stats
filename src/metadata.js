@@ -63,7 +63,7 @@ export class Language {
     }
 }
 
-const LINE_HEIGHT = 10;
+const LINE_HEIGHT = 25;
 
 /**
  * Create a stats card text item.
@@ -135,11 +135,12 @@ export const renderStatsCard = (project, languages) => {
     // but if rank circle is visible clamp the minimum height to `150`
     let height = Math.max(45 + (statItems.length + 1) * LINE_HEIGHT, 150);
 
+    const progress = Math.round((languages.reduce((a, b) => a + b.translations, 0) / languages.length / project.terms * 100 + Number.EPSILON) * 100) / 100;
     const cssStyles = getStyles({
         titleColor,
         ringColor,
         textColor,
-        progress: 0
+        progress
     });
 
     const calculateTextWidth = () => {
@@ -187,26 +188,26 @@ export const renderStatsCard = (project, languages) => {
         }
     };
 
-    // // Conditionally rendered elements
-    // const rankCircle =
-    // `<g data-testid="rank-circle"
-    //     transform="translate(${calculateRankXTranslation()}, ${
-    //     height / 2 - 50
-    // })">
-    //     <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
-    //     <circle class="rank-circle" cx="-10" cy="8" r="40" />
-    //     <g class="rank-text">
-    //     <text
-    //         x="-5"
-    //         y="3"
-    //         alignment-baseline="central"
-    //         dominant-baseline="central"
-    //         text-anchor="middle"
-    //     >
-    //         ${rank.level}
-    //     </text>
-    //     </g>
-    // </g>`;
+    // Conditionally rendered elements
+    const rankCircle =
+    `<g data-testid="rank-circle"
+        transform="translate(${calculateRankXTranslation()}, ${
+        height / 2 - 50
+    })">
+        <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
+        <circle class="rank-circle" cx="-10" cy="8" r="40" />
+        <g class="rank-text">
+        <text
+            x="-5"
+            y="3"
+            alignment-baseline="central"
+            dominant-baseline="central"
+            text-anchor="middle"
+        >
+            ${progress}%
+        </text>
+        </g>
+    </g>`;
 
     // Accessibility Labels
     const labels = Object.keys(STATS)
@@ -219,6 +220,7 @@ export const renderStatsCard = (project, languages) => {
     });
 
     return card.render(`
+        ${rankCircle}
         <svg x="0" y="0">
             ${flexLayout({
                 items: statItems,
