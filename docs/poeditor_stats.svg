@@ -68,7 +68,7 @@
         }
         .lang-circle {
             stroke: #2f80ed;
-            stroke-dasharray: 250;
+            stroke-dasharray: 125;
             fill: none;
             stroke-width: 3;
             stroke-linecap: round;
@@ -89,7 +89,7 @@
 
         @keyframes langAnimation_en-us {
             from {
-                stroke-dashoffset: 251.32741228718345;
+                stroke-dashoffset: 125.66370614359172;
             }
             to {
                 stroke-dashoffset: 0;
@@ -99,77 +99,77 @@
 
         @keyframes langAnimation_fr {
             from {
-                stroke-dashoffset: 251.32741228718345;
+                stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 141.54759860014173;
+                stroke-dashoffset: 70.77379930007086;
             }
         }
     
 
         @keyframes langAnimation_hu {
             from {
-                stroke-dashoffset: 251.32741228718345;
+                stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 146.92600522308746;
+                stroke-dashoffset: 73.46300261154373;
             }
         }
     
 
         @keyframes langAnimation_id {
             from {
-                stroke-dashoffset: 251.32741228718345;
+                stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 146.92600522308746;
+                stroke-dashoffset: 73.46300261154373;
             }
         }
     
 
         @keyframes langAnimation_it {
             from {
-                stroke-dashoffset: 251.32741228718345;
+                stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 146.92600522308746;
+                stroke-dashoffset: 73.46300261154373;
             }
         }
     
 
         @keyframes langAnimation_no {
             from {
-                stroke-dashoffset: 251.32741228718345;
+                stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 145.31750978444947;
+                stroke-dashoffset: 72.65875489222474;
             }
         }
     
 
         @keyframes langAnimation_pt {
             from {
-                stroke-dashoffset: 251.32741228718345;
+                stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 94.17238138400764;
+                stroke-dashoffset: 47.08619069200382;
             }
         }
     
 
         @keyframes langAnimation_ru {
             from {
-                stroke-dashoffset: 251.32741228718345;
+                stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 46.82229690910227;
+                stroke-dashoffset: 23.411148454551135;
             }
         }
     
 
         @keyframes langAnimation_es {
             from {
-                stroke-dashoffset: 251.32741228718345;
+                stroke-dashoffset: 125.66370614359172;
             }
             to {
                 stroke-dashoffset: 0;
@@ -179,10 +179,10 @@
 
         @keyframes langAnimation_tr {
             from {
-                stroke-dashoffset: 251.32741228718345;
+                stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 147.45379278889052;
+                stroke-dashoffset: 73.72689639444526;
             }
         }
     
