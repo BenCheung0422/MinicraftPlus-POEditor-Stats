@@ -1,19 +1,15 @@
 {
-  "name": "nextjs",
+  "name": "minicraft-plus-poeditor-stats",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+  "main": "src/index.js",
+  "type": "module",
+  "author": "BenCheung0422",
   "dependencies": {
-    "@next/font": "13.1.6",
-    "eslint": "8.32.0",
-    "eslint-config-next": "13.1.6",
-    "next": "13.1.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "axios": "^1.3.3",
+    "word-wrap": "^1.2.3"
+  },
+  "devDependencies": {
+    "vercel": "^28.16.2"
   }
 }
