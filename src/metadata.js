@@ -215,10 +215,10 @@ export const renderStatsCard = (project, languages) => {
     card.setCSS(card.css + "\n" + languages.map(lang => `
         @keyframes langAnimation_${lang.code} {
             from {
-                stroke-dashoffset: ${calculateCircleProgress(0)};
+                stroke-dashoffset: ${calculateCircleProgress(0, 20)};
             }
             to {
-                stroke-dashoffset: ${calculateCircleProgress(lang.percentage)};
+                stroke-dashoffset: ${calculateCircleProgress(lang.percentage, 20)};
             }
         }
     `).join("\n"));

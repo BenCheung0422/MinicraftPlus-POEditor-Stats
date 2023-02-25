@@ -5,8 +5,7 @@
  * @param {number} value The rank value to calculate progress for.
  * @returns {number} Progress value.
  */
-export const calculateCircleProgress = (value) => {
-    const radius = 40;
+export const calculateCircleProgress = (value, radius = 40) => {
     const c = Math.PI * (radius * 2);
   
     if (value < 0) value = 0;
@@ -126,7 +125,7 @@ const getStyles = ({
         }
         .lang-circle {
             stroke: ${ringColor};
-            stroke-dasharray: 250;
+            stroke-dasharray: 125;
             fill: none;
             stroke-width: 3;
             stroke-linecap: round;
