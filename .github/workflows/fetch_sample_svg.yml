@@ -21,6 +21,7 @@ jobs:
     - name: Fetch API Endpoint File
       id: api
       run: |
+        mkdir docs
         curl -X GET "https://minicraft-plus-poeditor-stats-bencheung0422.vercel.app/api?api_token=${{ secrets.POEDITOR_API_TOKEN }}&id=${{ secrets.POEDITOR_PROJECT_ID }}" -o "docs/poeditor_stats.svg"
     
     - name: Save API Endpoint File & Commit
