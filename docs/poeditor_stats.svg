@@ -33,7 +33,7 @@
             animation: fadeInAnimation 0.3s ease-in-out forwards;
         }
         .rank-text {
-            font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #434d58;
+            font: 800 20px 'Segoe UI', Ubuntu, Sans-Serif; fill: #434d58;
             animation: scaleInAnimation 0.3s ease-in-out forwards;
         }
         
@@ -63,7 +63,7 @@
                 stroke-dashoffset: 251.32741228718345;
             }
             to {
-                stroke-dashoffset: 251.32741228718345;
+                stroke-dashoffset: 101.61167278770827;
             }
         }
     
@@ -126,6 +126,22 @@
           transform="translate(0, 55)"
         >
           
+        <g data-testid="rank-circle"
+        transform="translate(365, 25)">
+        <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
+        <circle class="rank-circle" cx="-10" cy="8" r="40" />
+        <g class="rank-text">
+        <text
+            x="-5"
+            y="3"
+            alignment-baseline="central"
+            dominant-baseline="central"
+            text-anchor="middle"
+        >
+            59.57%
+        </text>
+        </g>
+    </g>
         <svg x="0" y="0">
             <g transform="translate(0, 0)">
         <g class="stagger" style="animation-delay: 450ms" transform="translate(25, 0)">
@@ -136,7 +152,7 @@
                 y="12.5"
             >English (US)</text>
         </g>
-    </g><g transform="translate(0, 10)">
+    </g><g transform="translate(0, 25)">
         <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
             <text class="stat bold" y="12.5">Terms:</text>
             <text
@@ -145,7 +161,7 @@
                 y="12.5"
             >467</text>
         </g>
-    </g><g transform="translate(0, 20)">
+    </g><g transform="translate(0, 50)">
         <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
             <text class="stat bold" y="12.5">Languages:</text>
             <text
