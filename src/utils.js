@@ -193,7 +193,7 @@ const isValidGradient = (colors) => {
  *
  * @param {string} color The color to parse.
  * @param {string} fallbackColor The fallback color.
- * @returns {string | string[]} The gradient or color.
+ * @returns {string} The gradient or color.
  */
 const fallbackColor = (color, fallbackColor) => {
   let gradient = null;
@@ -203,10 +203,11 @@ const fallbackColor = (color, fallbackColor) => {
     gradient = colors;
   }
 
-  return (
-    (gradient ? gradient : isValidHexColor(color) && `#${color}`) ||
-    fallbackColor
-  );
+  // return ( Unused feature
+  //   (gradient ? gradient : isValidHexColor(color) && `#${color}`) ||
+  //   fallbackColor
+  // );
+  return fallbackColor
 };
 
 /**
@@ -240,7 +241,6 @@ const getCardColors = ({
   // get the color provided by the user else the theme color
   // finally if both colors are invalid fallback to default theme
   /** @type {string} */
-  // @ts-ignore
   const titleColor = fallbackColor(
     title_color || selectedTheme.title_color,
     "#" + defaultTheme.title_color,
@@ -249,27 +249,22 @@ const getCardColors = ({
   // get the color provided by the user else the theme color
   // finally if both colors are invalid we use the titleColor
   /** @type {string} */
-  // @ts-ignore
   const ringColor = fallbackColor(
     ring_color || selectedTheme.ring_color,
-    // @ts-ignore
     titleColor,
   );
   /** @type {string} */
-  // @ts-ignore
   const textColor = fallbackColor(
     text_color || selectedTheme.text_color,
     "#" + defaultTheme.text_color,
   );
   /** @type {string} */
-  // @ts-ignore
   const bgColor = fallbackColor(
     bg_color || selectedTheme.bg_color,
     "#" + defaultTheme.bg_color,
   );
 
   /** @type {string} */
-  // @ts-ignore
   const borderColor = fallbackColor(
     border_color || defaultBorderColor,
     "#" + defaultBorderColor,
