@@ -81,7 +81,7 @@
                 stroke-dashoffset: 251.32741228718345;
             }
             to {
-                stroke-dashoffset: 101.61167278770827;
+                stroke-dashoffset: 101.23468166927749;
             }
         }
     
@@ -142,7 +142,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 72.65875489222474;
+                stroke-dashoffset: 70.77379930007086;
             }
         }
     
@@ -255,7 +255,7 @@
                 dominant-baseline="middle"
                 text-anchor="middle"
             >
-                59.57%
+                59.72%
             </text>
             </g>
         </g>
@@ -388,7 +388,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">Norwegian</tspan>
-                            <tspan x="5" dy="1em">42.18%</tspan>
+                            <tspan x="5" dy="1em">43.68%</tspan>
                         </text>
                     </g>
                 </g>
