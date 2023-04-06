@@ -81,7 +81,7 @@
                 stroke-dashoffset: 251.32741228718345;
             }
             to {
-                stroke-dashoffset: 80.95255949770177;
+                stroke-dashoffset: 73.08601149311295;
             }
         }
     
@@ -132,7 +132,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 73.46300261154373;
+                stroke-dashoffset: 34.16796170044259;
             }
         }
     
@@ -255,7 +255,7 @@
                 dominant-baseline="middle"
                 text-anchor="middle"
             >
-                67.79%
+                70.92%
             </text>
             </g>
         </g>
@@ -371,7 +371,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">Italian</tspan>
-                            <tspan x="5" dy="1em">41.54%</tspan>
+                            <tspan x="5" dy="1em">72.81%</tspan>
                         </text>
                     </g>
                 </g>
