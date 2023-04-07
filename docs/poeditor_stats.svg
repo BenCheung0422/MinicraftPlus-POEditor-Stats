@@ -81,7 +81,7 @@
                 stroke-dashoffset: 251.32741228718345;
             }
             to {
-                stroke-dashoffset: 142.4775100256043;
+                stroke-dashoffset: 140.36635976239197;
             }
         }
     
@@ -132,7 +132,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 27.444953421760438;
+                stroke-dashoffset: 9.412211590155014;
             }
         }
     
@@ -325,7 +325,7 @@
                 dominant-baseline="middle"
                 text-anchor="middle"
             >
-                43.31%
+                44.15%
             </text>
             </g>
         </g>
@@ -441,7 +441,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">French</tspan>
-                            <tspan x="5" dy="1em">78.16%</tspan>
+                            <tspan x="5" dy="1em">92.51%</tspan>
                         </text>
                     </g>
                 </g>
