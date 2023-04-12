@@ -81,7 +81,7 @@
                 stroke-dashoffset: 251.32741228718345;
             }
             to {
-                stroke-dashoffset: 140.36635976239197;
+                stroke-dashoffset: 140.11503235010477;
             }
         }
     
@@ -112,7 +112,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 125.66370614359172;
+                stroke-dashoffset: 123.51485676853632;
             }
         }
     
@@ -325,7 +325,7 @@
                 dominant-baseline="middle"
                 text-anchor="middle"
             >
-                44.15%
+                44.25%
             </text>
             </g>
         </g>
@@ -407,7 +407,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">English (UK)</tspan>
-                            <tspan x="5" dy="1em">0%</tspan>
+                            <tspan x="5" dy="1em">1.71%</tspan>
                         </text>
                     </g>
                 </g>
