@@ -1,3 +1,657 @@
-An error occurred with your deployment
 
-FUNCTION_INVOCATION_TIMEOUT
+      <svg
+        width="550"
+        height="205"
+        viewBox="0 0 550 205"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-labelledby="descId"
+      >
+        <title id="titleId">Minicraft+</title>
+        <desc id="descId">Reference Language: English (US), Terms: 467, Languages: 17</desc>
+        <style>
+          .header {
+            font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
+            fill: #2f80ed;
+            animation: fadeInAnimation 0.8s ease-in-out forwards;
+          }
+          @supports(-moz-appearance: auto) {
+            /* Selector detects Firefox */
+            .header { font-size: 15.5px; }
+          }
+          
+        .stat {
+            font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #434d58;
+        }
+        @supports(-moz-appearance: auto) {
+            /* Selector detects Firefox */
+            .stat { font-size:12px; }
+        }
+        .stagger {
+            opacity: 0;
+            animation: fadeInAnimation 0.3s ease-in-out forwards;
+        }
+        .rank-text {
+            font: 800 20px 'Segoe UI', Ubuntu, Sans-Serif; fill: #434d58;
+            animation: scaleInAnimation 0.3s ease-in-out forwards;
+        }
+        .lang-text {
+            font: 500 8px 'Segoe UI', Ubuntu, Sans-Serif; fill: #434d58;
+            animation: scaleInAnimation 0.3s ease-in-out forwards;
+        }
+        
+        .not_bold { font-weight: 400 }
+        .bold { font-weight: 700 }
+
+        .rank-circle-rim {
+            stroke: #2f80ed;
+            fill: none;
+            stroke-width: 6;
+            opacity: 0.2;
+        }
+        .rank-circle {
+            stroke: #2f80ed;
+            stroke-dasharray: 250;
+            fill: none;
+            stroke-width: 6;
+            stroke-linecap: round;
+            opacity: 0.8;
+            transform: rotate(-90deg);
+            animation: rankAnimation 1s forwards ease-in-out;
+        }
+        .lang-circle-rim {
+            stroke: #2f80ed;
+            fill: none;
+            stroke-width: 3;
+            opacity: 0.2;
+        }
+        .lang-circle {
+            stroke: #2f80ed;
+            stroke-dasharray: 125;
+            fill: none;
+            stroke-width: 3;
+            stroke-linecap: round;
+            opacity: 0.8;
+            transform: rotate(-90deg);
+        }
+        
+        @keyframes rankAnimation {
+            from {
+                stroke-dashoffset: 251.32741228718345;
+            }
+            to {
+                stroke-dashoffset: 140.11503235010477;
+            }
+        }
+    
+    
+
+        @keyframes langAnimation_da {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 125.66370614359172;
+            }
+        }
+    
+
+        @keyframes langAnimation_nl {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 125.66370614359172;
+            }
+        }
+    
+
+        @keyframes langAnimation_en-gb {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 123.51485676853632;
+            }
+        }
+    
+
+        @keyframes langAnimation_en-us {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    
+
+        @keyframes langAnimation_fr {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 9.412211590155014;
+            }
+        }
+    
+
+        @keyframes langAnimation_de {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 125.66370614359172;
+            }
+        }
+    
+
+        @keyframes langAnimation_hu {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 73.46300261154373;
+            }
+        }
+    
+
+        @keyframes langAnimation_id {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 73.46300261154373;
+            }
+        }
+    
+
+        @keyframes langAnimation_it {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 0.26389378290153476;
+            }
+        }
+    
+
+        @keyframes langAnimation_no {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 12.64176883804533;
+            }
+        }
+    
+
+        @keyframes langAnimation_pl {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 125.66370614359172;
+            }
+        }
+    
+
+        @keyframes langAnimation_pt {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 47.08619069200382;
+            }
+        }
+    
+
+        @keyframes langAnimation_ru {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 23.411148454551135;
+            }
+        }
+    
+
+        @keyframes langAnimation_es {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    
+
+        @keyframes langAnimation_sv {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 125.66370614359172;
+            }
+        }
+    
+
+        @keyframes langAnimation_tr {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 73.72689639444526;
+            }
+        }
+    
+
+        @keyframes langAnimation_uk {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 125.66370614359172;
+            }
+        }
+    
+
+          
+        /* Animations */
+        @keyframes scaleInAnimation {
+            from {
+                transform: translate(-5px, 5px) scale(0);
+            }
+            to {
+                transform: translate(-5px, 5px) scale(1);
+            }
+        }
+        @keyframes fadeInAnimation {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    
+          
+        </style>
+
+        
+
+        <rect
+          data-testid="card-bg"
+          x="0.5"
+          y="0.5"
+          rx="4.5"
+          height="99%"
+          stroke="#e4e2e2"
+          width="549"
+          fill="#fffefe"
+          stroke-opacity="1"
+        />
+
+        
+      <g
+        data-testid="card-title"
+        transform="translate(25, 35)"
+      >
+        <g transform="translate(0, 0)">
+      <text
+        x="0"
+        y="0"
+        class="header"
+        data-testid="header"
+      >Minicraft+</text>
+    </g>
+      </g>
+    
+
+        <g
+          data-testid="main-card-body"
+          transform="translate(0, 55)"
+        >
+          
+        <g data-testid="rank-circle"
+            transform="translate(445, 33.4)">
+            <circle class="rank-circle-rim" r="40" />
+            <circle class="rank-circle" r="40" />
+            <g class="rank-text">
+            <text
+                x="5"
+                y="-3"
+                dominant-baseline="middle"
+                text-anchor="middle"
+            >
+                44.25%
+            </text>
+            </g>
+        </g>
+        <svg x="0" y="0">
+            <g transform="translate(0, 0)">
+        <g class="stagger" style="animation-delay: 450ms" transform="translate(25, 0)">
+            <text class="stat bold" y="12.5">Reference Language:</text>
+            <text
+                class="stat bold"
+                x="199.01"
+                y="12.5"
+            >English (US)</text>
+        </g>
+    </g><g transform="translate(0, 25)">
+        <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
+            <text class="stat bold" y="12.5">Terms:</text>
+            <text
+                class="stat bold"
+                x="199.01"
+                y="12.5"
+            >467</text>
+        </g>
+    </g><g transform="translate(0, 50)">
+        <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
+            <text class="stat bold" y="12.5">Languages:</text>
+            <text
+                class="stat bold"
+                x="199.01"
+                y="12.5"
+            >17</text>
+        </g>
+    </g>
+        </svg>
+        <g data-testid="lang-circles"
+            transform="translate(45, 115)">
+            
+                <g transform="translate(0)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_da 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Danish</tspan>
+                            <tspan x="5" dy="1em">0%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(28.235294117647058)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_nl 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Dutch</tspan>
+                            <tspan x="5" dy="1em">0%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(56.470588235294116)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_en-gb 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">English (UK)</tspan>
+                            <tspan x="5" dy="1em">1.71%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(84.70588235294117)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_en-us 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">English (US)</tspan>
+                            <tspan x="5" dy="1em">100%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(112.94117647058823)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_fr 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">French</tspan>
+                            <tspan x="5" dy="1em">92.51%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(141.1764705882353)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_de 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">German</tspan>
+                            <tspan x="5" dy="1em">0%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(169.41176470588235)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_hu 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Hungarian</tspan>
+                            <tspan x="5" dy="1em">41.54%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(197.64705882352942)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_id 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Indonesian</tspan>
+                            <tspan x="5" dy="1em">41.54%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(225.88235294117646)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_it 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Italian</tspan>
+                            <tspan x="5" dy="1em">99.79%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(254.11764705882354)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_no 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Norwegian</tspan>
+                            <tspan x="5" dy="1em">89.94%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(282.3529411764706)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_pl 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Polish</tspan>
+                            <tspan x="5" dy="1em">0%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(310.5882352941176)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_pt 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Portuguese</tspan>
+                            <tspan x="5" dy="1em">62.53%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(338.8235294117647)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_ru 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Russian</tspan>
+                            <tspan x="5" dy="1em">81.37%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(367.05882352941177)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_es 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Spanish</tspan>
+                            <tspan x="5" dy="1em">100%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(395.29411764705884)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_sv 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Swedish</tspan>
+                            <tspan x="5" dy="1em">0%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(423.52941176470586)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_tr 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Turkish</tspan>
+                            <tspan x="5" dy="1em">41.33%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(451.7647058823529)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_uk 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Ukrainian</tspan>
+                            <tspan x="5" dy="1em">0%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+        </g>
+    
+        </g>
+      </svg>
+    
