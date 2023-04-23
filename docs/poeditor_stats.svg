@@ -81,7 +81,7 @@
                 stroke-dashoffset: 251.32741228718345;
             }
             to {
-                stroke-dashoffset: 146.2976866923695;
+                stroke-dashoffset: 146.14689024499717;
             }
         }
     
@@ -212,7 +212,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 125.66370614359172;
+                stroke-dashoffset: 124.3191044878553;
             }
         }
     
@@ -335,7 +335,7 @@
                 dominant-baseline="middle"
                 text-anchor="middle"
             >
-                41.79%
+                41.85%
             </text>
             </g>
         </g>
@@ -587,7 +587,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">Portuguese (BR)</tspan>
-                            <tspan x="5" dy="1em">0%</tspan>
+                            <tspan x="5" dy="1em">1.07%</tspan>
                         </text>
                     </g>
                 </g>
