@@ -81,7 +81,7 @@
                 stroke-dashoffset: 251.32741228718345;
             }
             to {
-                stroke-dashoffset: 138.48140417023808;
+                stroke-dashoffset: 134.05804171398364;
             }
         }
     
@@ -192,7 +192,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 125.66370614359172;
+                stroke-dashoffset: 85.84087766668752;
             }
         }
     
@@ -335,7 +335,7 @@
                 dominant-baseline="middle"
                 text-anchor="middle"
             >
-                44.9%
+                46.66%
             </text>
             </g>
         </g>
@@ -553,7 +553,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">Polish</tspan>
-                            <tspan x="5" dy="1em">0%</tspan>
+                            <tspan x="5" dy="1em">31.69%</tspan>
                         </text>
                     </g>
                 </g>
