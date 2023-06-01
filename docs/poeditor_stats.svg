@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Minicraft+</title>
-        <desc id="descId">Reference Language: English (US), Terms: 467, Languages: 10</desc>
+        <desc id="descId">Reference Language: English (US), Terms: 467, Languages: 18</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -81,10 +81,40 @@
                 stroke-dashoffset: 251.32741228718345;
             }
             to {
-                stroke-dashoffset: 101.61167278770827;
+                stroke-dashoffset: 123.12529927949117;
             }
         }
     
+    
+
+        @keyframes langAnimation_da {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 125.66370614359172;
+            }
+        }
+    
+
+        @keyframes langAnimation_nl {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 125.66370614359172;
+            }
+        }
+    
+
+        @keyframes langAnimation_en-gb {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 123.51485676853632;
+            }
+        }
     
 
         @keyframes langAnimation_en-us {
@@ -102,7 +132,17 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 70.77379930007086;
+                stroke-dashoffset: 9.412211590155014;
+            }
+        }
+    
+
+        @keyframes langAnimation_de {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 27.181059638858887;
             }
         }
     
@@ -132,7 +172,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 73.46300261154373;
+                stroke-dashoffset: 0.26389378290153476;
             }
         }
     
@@ -142,7 +182,17 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 72.65875489222474;
+                stroke-dashoffset: 12.64176883804533;
+            }
+        }
+    
+
+        @keyframes langAnimation_pl {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 85.84087766668752;
             }
         }
     
@@ -153,6 +203,16 @@
             }
             to {
                 stroke-dashoffset: 47.08619069200382;
+            }
+        }
+    
+
+        @keyframes langAnimation_pt-br {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 55.43026077993831;
             }
         }
     
@@ -177,12 +237,32 @@
         }
     
 
+        @keyframes langAnimation_sv {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 125.66370614359172;
+            }
+        }
+    
+
         @keyframes langAnimation_tr {
             from {
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
                 stroke-dashoffset: 73.72689639444526;
+            }
+        }
+    
+
+        @keyframes langAnimation_uk {
+            from {
+                stroke-dashoffset: 125.66370614359172;
+            }
+            to {
+                stroke-dashoffset: 125.66370614359172;
             }
         }
     
@@ -255,7 +335,7 @@
                 dominant-baseline="middle"
                 text-anchor="middle"
             >
-                59.57%
+                51.01%
             </text>
             </g>
         </g>
@@ -285,7 +365,7 @@
                 class="stat bold"
                 x="199.01"
                 y="12.5"
-            >10</text>
+            >18</text>
         </g>
     </g>
         </svg>
@@ -293,6 +373,57 @@
             transform="translate(45, 115)">
             
                 <g transform="translate(0)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_da 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Danish</tspan>
+                            <tspan x="5" dy="1em">0%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(26.666666666666668)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_nl 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Dutch</tspan>
+                            <tspan x="5" dy="1em">0%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(53.333333333333336)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_en-gb 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">English (UK)</tspan>
+                            <tspan x="5" dy="1em">1.71%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(80)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_en-us 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -309,7 +440,7 @@
                 </g>
             
 
-                <g transform="translate(48)">
+                <g transform="translate(106.66666666666667)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_fr 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -320,13 +451,30 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">French</tspan>
-                            <tspan x="5" dy="1em">43.68%</tspan>
+                            <tspan x="5" dy="1em">92.51%</tspan>
                         </text>
                     </g>
                 </g>
             
 
-                <g transform="translate(96)">
+                <g transform="translate(133.33333333333334)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_de 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">German</tspan>
+                            <tspan x="5" dy="1em">78.37%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(160)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_hu 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -343,7 +491,7 @@
                 </g>
             
 
-                <g transform="translate(144)">
+                <g transform="translate(186.66666666666666)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_id 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -360,7 +508,7 @@
                 </g>
             
 
-                <g transform="translate(192)">
+                <g transform="translate(213.33333333333334)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_it 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -371,7 +519,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">Italian</tspan>
-                            <tspan x="5" dy="1em">41.54%</tspan>
+                            <tspan x="5" dy="1em">99.79%</tspan>
                         </text>
                     </g>
                 </g>
@@ -388,13 +536,30 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">Norwegian</tspan>
-                            <tspan x="5" dy="1em">42.18%</tspan>
+                            <tspan x="5" dy="1em">89.94%</tspan>
                         </text>
                     </g>
                 </g>
             
 
-                <g transform="translate(288)">
+                <g transform="translate(266.6666666666667)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_pl 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Polish</tspan>
+                            <tspan x="5" dy="1em">31.69%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(293.3333333333333)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_pt 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -411,7 +576,24 @@
                 </g>
             
 
-                <g transform="translate(336)">
+                <g transform="translate(320)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_pt-br 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Portuguese (BR)</tspan>
+                            <tspan x="5" dy="1em">55.89%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(346.6666666666667)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_ru 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -428,7 +610,7 @@
                 </g>
             
 
-                <g transform="translate(384)">
+                <g transform="translate(373.3333333333333)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_es 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -445,7 +627,24 @@
                 </g>
             
 
-                <g transform="translate(432)">
+                <g transform="translate(400)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_sv 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Swedish</tspan>
+                            <tspan x="5" dy="1em">0%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(426.6666666666667)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_tr 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -457,6 +656,23 @@
                         >
                             <tspan x="5" dy="-5">Turkish</tspan>
                             <tspan x="5" dy="1em">41.33%</tspan>
+                        </text>
+                    </g>
+                </g>
+            
+
+                <g transform="translate(453.3333333333333)">
+                    <circle class="lang-circle-rim" r="20" />
+                    <circle class="lang-circle" r="20" style="animation: langAnimation_uk 1s forwards ease-in-out" />
+                    <g class="lang-text">
+                        <text
+                            x="5"
+                            y="-3"
+                            dominant-baseline="middle"
+                            text-anchor="middle"
+                        >
+                            <tspan x="5" dy="-5">Ukrainian</tspan>
+                            <tspan x="5" dy="1em">0%</tspan>
                         </text>
                     </g>
                 </g>
