@@ -1,8 +1,8 @@
 
       <svg
-        width="550"
+        width="940"
         height="205"
-        viewBox="0 0 550 205"
+        viewBox="0 0 940 205"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
@@ -298,7 +298,7 @@
           rx="4.5"
           height="99%"
           stroke="#e4e2e2"
-          width="549"
+          width="939"
           fill="#fffefe"
           stroke-opacity="1"
         />
@@ -325,7 +325,7 @@
         >
           
         <g data-testid="rank-circle"
-            transform="translate(445, 33.4)">
+            transform="translate(935, 33.4)">
             <circle class="rank-circle-rim" r="40" />
             <circle class="rank-circle" r="40" />
             <g class="rank-text">
@@ -389,7 +389,7 @@
                 </g>
             
 
-                <g transform="translate(26.666666666666668)">
+                <g transform="translate(48.333333333333336)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_nl 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -406,7 +406,7 @@
                 </g>
             
 
-                <g transform="translate(53.333333333333336)">
+                <g transform="translate(96.66666666666667)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_en-gb 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -423,7 +423,7 @@
                 </g>
             
 
-                <g transform="translate(80)">
+                <g transform="translate(145)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_en-us 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -440,7 +440,7 @@
                 </g>
             
 
-                <g transform="translate(106.66666666666667)">
+                <g transform="translate(193.33333333333334)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_fr 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -457,7 +457,7 @@
                 </g>
             
 
-                <g transform="translate(133.33333333333334)">
+                <g transform="translate(241.66666666666666)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_de 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -474,7 +474,7 @@
                 </g>
             
 
-                <g transform="translate(160)">
+                <g transform="translate(290)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_hu 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -491,7 +491,7 @@
                 </g>
             
 
-                <g transform="translate(186.66666666666666)">
+                <g transform="translate(338.3333333333333)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_id 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -508,7 +508,7 @@
                 </g>
             
 
-                <g transform="translate(213.33333333333334)">
+                <g transform="translate(386.6666666666667)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_it 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -525,7 +525,7 @@
                 </g>
             
 
-                <g transform="translate(240)">
+                <g transform="translate(435)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_no 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -542,7 +542,7 @@
                 </g>
             
 
-                <g transform="translate(266.6666666666667)">
+                <g transform="translate(483.3333333333333)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_pl 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -559,7 +559,7 @@
                 </g>
             
 
-                <g transform="translate(293.3333333333333)">
+                <g transform="translate(531.6666666666666)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_pt 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -576,7 +576,7 @@
                 </g>
             
 
-                <g transform="translate(320)">
+                <g transform="translate(580)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_pt-br 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -593,7 +593,7 @@
                 </g>
             
 
-                <g transform="translate(346.6666666666667)">
+                <g transform="translate(628.3333333333334)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_ru 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -610,7 +610,7 @@
                 </g>
             
 
-                <g transform="translate(373.3333333333333)">
+                <g transform="translate(676.6666666666666)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_es 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -627,7 +627,7 @@
                 </g>
             
 
-                <g transform="translate(400)">
+                <g transform="translate(725)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_sv 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -644,7 +644,7 @@
                 </g>
             
 
-                <g transform="translate(426.6666666666667)">
+                <g transform="translate(773.3333333333334)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_tr 1s forwards ease-in-out" />
                     <g class="lang-text">
@@ -661,7 +661,7 @@
                 </g>
             
 
-                <g transform="translate(453.3333333333333)">
+                <g transform="translate(821.6666666666666)">
                     <circle class="lang-circle-rim" r="20" />
                     <circle class="lang-circle" r="20" style="animation: langAnimation_uk 1s forwards ease-in-out" />
                     <g class="lang-text">
