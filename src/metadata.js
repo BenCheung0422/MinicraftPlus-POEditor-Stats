@@ -141,7 +141,7 @@ export const renderStatsCard = (project, languages) => {
         progress
     });
 
-    let width = CARD_DEFAULT_WIDTH;
+    let width = 400 + 25 * languages.length; // Expands dynamically
     if (width < CARD_MIN_WIDTH) {
         width = CARD_MIN_WIDTH;
     }
