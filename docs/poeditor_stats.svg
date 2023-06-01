@@ -81,7 +81,7 @@
                 stroke-dashoffset: 251.32741228718345;
             }
             to {
-                stroke-dashoffset: 130.3886614945908;
+                stroke-dashoffset: 123.12529927949117;
             }
         }
     
@@ -142,7 +142,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 92.56388594536965;
+                stroke-dashoffset: 27.181059638858887;
             }
         }
     
@@ -335,7 +335,7 @@
                 dominant-baseline="middle"
                 text-anchor="middle"
             >
-                48.12%
+                51.01%
             </text>
             </g>
         </g>
@@ -468,7 +468,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">German</tspan>
-                            <tspan x="5" dy="1em">26.34%</tspan>
+                            <tspan x="5" dy="1em">78.37%</tspan>
                         </text>
                     </g>
                 </g>
