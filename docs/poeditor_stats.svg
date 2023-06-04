@@ -81,7 +81,7 @@
                 stroke-dashoffset: 251.32741228718345;
             }
             to {
-                stroke-dashoffset: 115.93733528807773;
+                stroke-dashoffset: 115.68600787579054;
             }
         }
     
@@ -162,7 +162,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 8.884424024351926;
+                stroke-dashoffset: 6.459114495780615;
             }
         }
     
@@ -335,7 +335,7 @@
                 dominant-baseline="middle"
                 text-anchor="middle"
             >
-                53.87%
+                53.97%
             </text>
             </g>
         </g>
@@ -502,7 +502,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">Indonesian</tspan>
-                            <tspan x="5" dy="1em">92.93%</tspan>
+                            <tspan x="5" dy="1em">94.86%</tspan>
                         </text>
                     </g>
                 </g>
