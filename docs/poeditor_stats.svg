@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Minicraft+</title>
-        <desc id="descId">Reference Language: English (US), Terms: 467, Languages: 18</desc>
+        <desc id="descId">Reference Language: English (US), Terms: 470, Languages: 18</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -81,7 +81,7 @@
                 stroke-dashoffset: 251.32741228718345;
             }
             to {
-                stroke-dashoffset: 114.95715838015772;
+                stroke-dashoffset: 115.73627335824797;
             }
         }
     
@@ -112,7 +112,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 123.51485676853632;
+                stroke-dashoffset: 123.52742313915067;
             }
         }
     
@@ -132,7 +132,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 9.412211590155014;
+                stroke-dashoffset: 10.166193827016574;
             }
         }
     
@@ -142,7 +142,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 27.181059638858887;
+                stroke-dashoffset: 27.809378169576842;
             }
         }
     
@@ -152,7 +152,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 73.46300261154373;
+                stroke-dashoffset: 73.78972824751705;
             }
         }
     
@@ -162,7 +162,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 0;
+                stroke-dashoffset: 0.8042477193189878;
             }
         }
     
@@ -172,7 +172,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 0.26389378290153476;
+                stroke-dashoffset: 1.0681415022205225;
             }
         }
     
@@ -182,7 +182,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 12.64176883804533;
+                stroke-dashoffset: 13.370618333678161;
             }
         }
     
@@ -192,7 +192,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 85.84087766668752;
+                stroke-dashoffset: 86.0922050789747;
             }
         }
     
@@ -202,7 +202,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 47.08619069200382;
+                stroke-dashoffset: 47.58884551657818;
             }
         }
     
@@ -212,7 +212,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 55.43026077993831;
+                stroke-dashoffset: 55.88265012205524;
             }
         }
     
@@ -222,7 +222,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 23.411148454551135;
+                stroke-dashoffset: 24.06459972649782;
             }
         }
     
@@ -232,7 +232,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 0;
+                stroke-dashoffset: 0.8042477193189878;
             }
         }
     
@@ -252,7 +252,7 @@
                 stroke-dashoffset: 125.66370614359172;
             }
             to {
-                stroke-dashoffset: 73.72689639444526;
+                stroke-dashoffset: 74.06618840103295;
             }
         }
     
@@ -335,7 +335,7 @@
                 dominant-baseline="middle"
                 text-anchor="middle"
             >
-                54.26%
+                53.95%
             </text>
             </g>
         </g>
@@ -356,7 +356,7 @@
                 class="stat bold"
                 x="199.01"
                 y="12.5"
-            >467</text>
+            >470</text>
         </g>
     </g><g transform="translate(0, 50)">
         <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -417,7 +417,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">English (UK)</tspan>
-                            <tspan x="5" dy="1em">1.71%</tspan>
+                            <tspan x="5" dy="1em">1.7%</tspan>
                         </text>
                     </g>
                 </g>
@@ -451,7 +451,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">French</tspan>
-                            <tspan x="5" dy="1em">92.51%</tspan>
+                            <tspan x="5" dy="1em">91.91%</tspan>
                         </text>
                     </g>
                 </g>
@@ -468,7 +468,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">German</tspan>
-                            <tspan x="5" dy="1em">78.37%</tspan>
+                            <tspan x="5" dy="1em">77.87%</tspan>
                         </text>
                     </g>
                 </g>
@@ -485,7 +485,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">Hungarian</tspan>
-                            <tspan x="5" dy="1em">41.54%</tspan>
+                            <tspan x="5" dy="1em">41.28%</tspan>
                         </text>
                     </g>
                 </g>
@@ -502,7 +502,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">Indonesian</tspan>
-                            <tspan x="5" dy="1em">100%</tspan>
+                            <tspan x="5" dy="1em">99.36%</tspan>
                         </text>
                     </g>
                 </g>
@@ -519,7 +519,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">Italian</tspan>
-                            <tspan x="5" dy="1em">99.79%</tspan>
+                            <tspan x="5" dy="1em">99.15%</tspan>
                         </text>
                     </g>
                 </g>
@@ -536,7 +536,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">Norwegian</tspan>
-                            <tspan x="5" dy="1em">89.94%</tspan>
+                            <tspan x="5" dy="1em">89.36%</tspan>
                         </text>
                     </g>
                 </g>
@@ -553,7 +553,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">Polish</tspan>
-                            <tspan x="5" dy="1em">31.69%</tspan>
+                            <tspan x="5" dy="1em">31.49%</tspan>
                         </text>
                     </g>
                 </g>
@@ -570,7 +570,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">Portuguese</tspan>
-                            <tspan x="5" dy="1em">62.53%</tspan>
+                            <tspan x="5" dy="1em">62.13%</tspan>
                         </text>
                     </g>
                 </g>
@@ -587,7 +587,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">Portuguese (BR)</tspan>
-                            <tspan x="5" dy="1em">55.89%</tspan>
+                            <tspan x="5" dy="1em">55.53%</tspan>
                         </text>
                     </g>
                 </g>
@@ -604,7 +604,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">Russian</tspan>
-                            <tspan x="5" dy="1em">81.37%</tspan>
+                            <tspan x="5" dy="1em">80.85%</tspan>
                         </text>
                     </g>
                 </g>
@@ -621,7 +621,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">Spanish</tspan>
-                            <tspan x="5" dy="1em">100%</tspan>
+                            <tspan x="5" dy="1em">99.36%</tspan>
                         </text>
                     </g>
                 </g>
@@ -655,7 +655,7 @@
                             text-anchor="middle"
                         >
                             <tspan x="5" dy="-5">Turkish</tspan>
-                            <tspan x="5" dy="1em">41.33%</tspan>
+                            <tspan x="5" dy="1em">41.06%</tspan>
                         </text>
                     </g>
                 </g>
