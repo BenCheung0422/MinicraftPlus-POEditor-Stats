@@ -2,7 +2,7 @@ name: Push Builds into Main Repository
 on:
   push:
     branches:
-      - main
+      - build
     paths-ignore:
       - "docs/**"
       - ".github/**"
@@ -13,7 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Wait for tests to succeed
+      uses: lewagon/wait-on-check-action@v1.3
+      with:
+        ref: ${{ github.ref }}
+        check-name: 'Deploying SVG to repository'
+        wait-interval: 10
     - name: Checkout
       uses: actions/checkout@v3
-
-    - run: git push origin build:main
+    - run: git push origin main --set-upstream -- --force
