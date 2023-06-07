@@ -1,0 +1,22 @@
+name: Push Builds into Main Repository
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "docs/**"
+      - ".github/**"
+
+jobs:
+  execution:
+    name: Pull & Push builds
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - run: |
+        git checkout -b temp
+        git pull origin vercel-build:temp
+        git push origin temp:main
