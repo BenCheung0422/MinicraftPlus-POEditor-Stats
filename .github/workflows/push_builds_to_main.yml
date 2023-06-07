@@ -16,7 +16,4 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - run: |
-        git checkout -b temp
-        git pull origin vercel-build:temp
-        git push origin temp:main
+    - run: git push origin build:main
