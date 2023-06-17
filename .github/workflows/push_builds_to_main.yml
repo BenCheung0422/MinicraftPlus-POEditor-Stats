@@ -21,4 +21,6 @@ jobs:
         wait-interval: 10
     - name: Checkout
       uses: actions/checkout@v3
+    - name: Setup master branch locally without switching current branch
+      run: git fetch origin build:build
     - run: git push origin main --set-upstream -- --force
