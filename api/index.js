@@ -27,6 +27,7 @@ export default async (req, res) => {
         );
 
         // Documentation: https://poeditor.com/docs/api#projects_view
+        /** @type any */
         const apiResponse = await fetch("https://api.poeditor.com/v2/projects/view",
             {method: "POST", body: `api_token=${api_token}&id=${id}`, headers: {"Content-Type": "application/x-www-form-urlencoded"}
         }).then(a => a.json()).catch(e => {throw new CustomError(e.message, e.secondaryMessage || CustomError.POEDITOR_ERROR);});
@@ -34,6 +35,7 @@ export default async (req, res) => {
         const project = new Project(apiResponse.result.project);
 
         // Documentation: https://poeditor.com/docs/api#languages_list
+        /** @type any */
         const langResponse = await fetch("https://api.poeditor.com/v2/languages/list",
             {method: "POST", body: `api_token=${api_token}&id=${id}`, headers: {"Content-Type": "application/x-www-form-urlencoded"}
         }).then(a => a.json()).catch(e => {throw new CustomError(e.message, e.secondaryMessage || CustomError.POEDITOR_ERROR);});

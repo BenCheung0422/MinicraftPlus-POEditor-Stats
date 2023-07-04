@@ -2,7 +2,7 @@
 
 import { Card } from "./Card.js";
 import { calculateCircleProgress, getStyles } from "./getStyles.js";
-import { flexLayout, getCardColors, measureText } from "./utils.js";
+import { flexLayout, getCardColors } from "./utils-base.js";
 
 const CARD_MIN_WIDTH = 480;
 const CARD_DEFAULT_WIDTH = 550;

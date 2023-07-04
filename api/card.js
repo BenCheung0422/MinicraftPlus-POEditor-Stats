@@ -27,6 +27,6 @@ export default async (req, res) => {
         apiResponse.text().then(t => res.send(t)); // Redirect body
     } catch (e) {
         res.setHeader("Cache-Control", `no-cache, no-store, must-revalidate`); // Do not cache error responses.
-        res.send(renderError(e.constructor.name + ";" + e.message, e.secondaryMessage));
+        res.send(renderError(e.message, e.secondaryMessage));
     }
 }

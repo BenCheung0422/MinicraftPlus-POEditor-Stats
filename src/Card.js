@@ -1,7 +1,7 @@
 // @ts-check
 
 import { getAnimations } from "./getStyles.js";
-import { encodeHTML, flexLayout } from "./utils.js";
+import { encodeHTML, flexLayout } from "./utils-base.js";
 
 class Card {
   /** @type {number} */
