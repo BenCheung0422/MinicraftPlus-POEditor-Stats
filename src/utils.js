@@ -1,6 +1,6 @@
 // @ts-check
 
-import wrap from "word-wrap";
+import wordwrap from "wordwrapjs";
 import themes from "../themes/index.js";
 
 // Script parameters.
@@ -291,7 +291,7 @@ const wrapTextMultiline = (text, width = 59, maxLines = 3) => {
   if (isChinese) {
     wrapped = encoded.split(fullWidthComma); // Chinese full punctuation
   } else {
-    wrapped = wrap(encoded, {
+    wrapped = wordwrap.wrap(encoded, {
       width,
     }).split("\n"); // Split wrapped lines to get an array of lines
   }
