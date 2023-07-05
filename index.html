@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Minicraft+ POEditor Status</title>
+    <title>Minicraft+ POEditor Stats</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" id="topNav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Minicraft+ POEditor <small>Status Site</small></a>
+        <a class="navbar-brand" href="#">Minicraft+ POEditor <small>Stats Site</small></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -18,20 +18,24 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
           </ul>
         </div>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
           <li class="nav-item">
-            <a class="nav-link" href="https://poeditor.com/join/project/xvtwoWhNXe">Contribute</a>
+            <a class="nav-link" href="https://poeditor.com/join/project/xvtwoWhNXe" title="Contribute on POEditor">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+              </svg>
+            </a>
           </li>
         </ul>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/BenCheung0422/MinicraftPlus-POEditor-Stats">
-              <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Mark" height="20" width="20" />
+            <a class="nav-link" href="https://github.com/BenCheung0422/MinicraftPlus-POEditor-Stats" title="GitHub Repository">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
             </a>
           </li>
         </ul>
@@ -41,27 +45,33 @@
     <div id="spinnerCircle" class="spinner-border fade show" style="width: 6rem; height: 6rem; position: fixed; top: 50%; left: 50%; margin-top: -3rem; margin-left: -3rem;" role="status">
       <span class="visually-hidden">Loading...</span>
     </div>
-    <div id="main-content" class="fade"></div>
+    <div id="main-content" class="fade mx-5 my-4"></div>
 
     <script type="module">
-      import { checkResponse, CustomError } from "./src/utils-base.js";
+      import { checkInternalResponse, CustomError, timeAgo } from "./src/utils-base.js";
       import { Project, Language } from "./src/metadata.js";
 
       const content = document.getElementById("main-content");
       try {
         const apiResponse = await fetch(new URL("/api/project_info", window.location.origin))
           .then(a => a.json()).catch(e => {throw new CustomError(e.message, e.secondaryMessage || CustomError.POEDITOR_ERROR);});
-        checkResponse(apiResponse.response)
+        checkInternalResponse(apiResponse)
         const project = new Project(apiResponse.result.project);
   
         const langResponse = await fetch(new URL("/api/project_languages", window.location.origin))
           .then(a => a.json()).catch(e => {throw new CustomError(e.message, e.secondaryMessage || CustomError.POEDITOR_ERROR);});
-        checkResponse(langResponse.response)
+        checkInternalResponse(langResponse)
         /** @type {Language[]} */
         const languages = [];
         for (let i = 0; i < langResponse.result.languages.length; i++) {
           languages.push(new Language(langResponse.result.languages[i]));
         }
+
+        const memberResponse = await fetch(new URL("/api/project_contributors", window.location.origin))
+          .then(a => a.json()).catch(e => {throw new CustomError(e.message, e.secondaryMessage || CustomError.POEDITOR_ERROR);});
+        checkInternalResponse(memberResponse)
+        /** @type {{contributors: number, managers: {name: string, administrator: boolean}[]}} */
+        const members = memberResponse.result;
         
         const formatter = new Intl.DateTimeFormat(undefined, {
           year: "numeric",
@@ -73,16 +83,94 @@
           hour12: false
         });
 
-        content.innerHTML = "<h2>Languages</h2>" +
+        content.innerHTML = 
+          `<p class="lead">This localization project is open-to-all. Everyone having an account is allowed to contribute through POEditor.</p>` +
+          `<h3 class="my-3">Details</h3>` +
           `<div class="container text-center">
-            <div class="row g-2">
-              ${languages.map(lang =>
-                `<div class="col-4">
-                  <div class="p-3">
-                    <p><span class="fs-4 fw-bold">${lang.name}</span> <span class="font-monospace">${lang.code}</span></p>
-                    <p>Last updated: ${ isNaN(lang.updated) ? "Never" : formatter.format(lang.updated)}</p>
-                  </div>
-                </div>`).join("\n")}
+            <div class="row justify-content-between">
+              <div class="col text-muted">Source Language</div>
+              <b class="col">English (US)</b>
+            </div>
+            <div class="row justify-content-between">
+              <div class="col text-muted">Contributors</div>
+              <b class="col">${members.contributors}</b>
+            </div>
+            <div class="row justify-content-between">
+              <div class="col text-muted">Words to translate</div>
+              <b class="col">${project.terms}</b>
+            </div>
+            <div class="row justify-content-between">
+              <div class="col text-muted">Created</div>
+              <b class="col">${timeAgo(project.created)}</b>
+            </div>
+          </div>` +
+          `<h3 class="my-3">Project Managers</h3>` +
+          `<ul class="list-unstyled mx-5">
+            <li> <!--This is hard-coded due to the API limitation.-->
+              BenForge0422 <span class="badge text-bg-primary">Owner</span>
+            </li>
+            ${members.managers.map(manager => `<li>
+                ${manager.name} <span class="badge text-bg-${manager.administrator ? "primary" : "secondary"}">${manager.administrator ? "Administrator" : "Proofreader"}</span>
+              </li>`).join("\n")}
+          </ul>` +
+          `<div class="my-3 d-flex">
+            <div class="h2 me-auto">Languages</div>
+            <ul class="nav nav-pills" id="langTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="card-tab" data-bs-toggle="tab" data-bs-target="#card-tab-pane" type="button" role="tab" aria-controls="card-tab-pane" aria-selected="true">Brief</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="table-tab" data-bs-toggle="tab" data-bs-target="#table-tab-pane" type="button" role="tab" aria-controls="table-tab-pane" aria-selected="false">List</button>
+              </li>
+            </ul>
+          </div>` +
+          `<div class="container text-center">
+            <div class="tab-content" id="langTabContent">
+              <div class="tab-pane fade show active" id="card-tab-pane" role="tabpanel" aria-labelledby="card-tab" tabindex="0">
+                <div class="row row-cols-1 row-cols-md-4 g-3">
+                  ${languages.map(lang =>
+                    `<div class="col">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            <span class="fs-4 fw-bold">${lang.name}</span>
+                            <span class="font-monospace text-muted">${lang.code}</span>
+                          </h5>
+                          <p class="card-text">
+                            <div class="progress mb-2 mx-0" style="height: 1px;">
+                              <div class="progress-bar" role="progressbar" aria-label="Progress thin" style="width: ${lang.percentage}%;" aria-valuenow="${lang.percentage}" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>Last updated: ${ isNaN(lang.updated) ? "Never" : formatter.format(lang.updated)}</p>
+                            <p>Translations: ${ lang.translations }</p>
+                            <p>Progress: ${ lang.percentage }%</p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>`).join("\n")}
+                </div>
+              </div>
+              <div class="tab-pane fade" id="table-tab-pane" role="tabpanel" aria-labelledby="table-tab" tabindex="0">
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="col-1">Language</th>
+                      <th scope="col" class="col-1">Translations</th>
+                      <th scope="col" class="col-3">Progress</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-group-divider">
+                    ${languages.map(lang => `<tr>
+                        <td>${lang.name} <span class="font-monospace text-muted">${lang.code}</span></td>
+                        <td>${lang.translations}</td>
+                        <td>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-label="progress label" style="width: ${lang.percentage}%;" aria-valuenow="${lang.percentage}" aria-valuemin="0" aria-valuemax="100">${lang.percentage}%</div>
+                          </div>
+                        </td>
+                      </tr>`).join("\n")}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>`
       } catch (e) {

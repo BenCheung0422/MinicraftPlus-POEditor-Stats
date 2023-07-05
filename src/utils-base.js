@@ -298,6 +298,46 @@ const checkResponse = response => {
     throw new CustomError("POEditor API Request Failure: " + response.code, response.message);
 }
 
+/**
+ * Checking if the response success, an error is thrown if the response does not success.
+ * @param {{response?: Parameters<typeof checkResponse>[0], error?: string, message?: string}?=} response The response object from the internal server API bridge to the POEditor API.
+ */
+const checkInternalResponse = response => {
+  if (response == null || response == undefined)
+    throw new CustomError("Internal Server Error", "Bad response");
+  else if (response.error !== undefined)
+    throw new CustomError(response.error || "Error", response.message || "Error");
+  // Assume the remaining responses are reponses from the POEditor API.
+  checkResponse(response.response);
+}
+
+/**
+ * Source: https://stackoverflow.com/a/69122877
+ * @param {string | number | Date} input
+ */
+function timeAgo(input) {
+  const date = (input instanceof Date) ? input : new Date(input);
+  const formatter = new Intl.RelativeTimeFormat('en');
+  /** @type {Partial<Record<Intl.RelativeTimeFormatUnit, number>>} */
+  const ranges = {
+    years: 3600 * 24 * 365,
+    months: 3600 * 24 * 30,
+    weeks: 3600 * 24 * 7,
+    days: 3600 * 24,
+    hours: 3600,
+    minutes: 60,
+    seconds: 1
+  };
+  const secondsElapsed = (date.getTime() - Date.now()) / 1000;
+  for (const /** @type {Intl.RelativeTimeFormatUnit} */ key in ranges) {
+    if (ranges[key] < Math.abs(secondsElapsed)) {
+      const delta = secondsElapsed / ranges[key];
+      // @ts-expect-error
+      return formatter.format(Math.round(delta), key);
+    }
+  }
+}
+
 export {
   ERROR_CARD_LENGTH,
   renderError,
@@ -311,5 +351,7 @@ export {
   CustomError,
   MissingParamError,
   measureText,
-  checkResponse
+  checkResponse,
+  checkInternalResponse,
+  timeAgo
 }
