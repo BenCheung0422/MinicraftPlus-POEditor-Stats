@@ -5,7 +5,7 @@ This repository is used for showing the POEditor stats as a stats card in markdo
 
 Sample SVG for Minicraft+ project in POEditor:
 
-[![Minicraft+ POEditor Stats](https://minicraft-plus-poeditor-stats.vercel.app/api/card)](minicraft-plus-poeditor-stats.vercel.app)
+[![Minicraft+ POEditor Stats](https://minicraft-plus-poeditor-stats.vercel.app/api/card)](https://minicraft-plus-poeditor-stats.vercel.app)
 
 > ```diff
 > # Referenced source: https://github.com/anuraghazra/github-readme-stats
