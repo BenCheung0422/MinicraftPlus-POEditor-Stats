@@ -1,5 +1,11 @@
 # Minicraft+ POEditor Stats
 
+> ---
+> 
+> **Minicraft+ is now no longer using POEditor, so this repository is archived due to its abandonment.**
+> 
+> ---
+
 Main repository for Minicraft+ on GitHub: https://github.com/MinicraftPlus/minicraft-plus-revived.
 This repository is used for showing the POEditor stats as a stats card in markdown from the POEditor for Minicraft+ to use.
 
